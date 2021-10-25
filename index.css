@@ -1,0 +1,30 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.changes-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: min-content;
+    width: 400px;
+}
+.change-button {
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.change-button:hover {
+    background-color: red;
+    transition: all ease 0.3s;
+    color:white;
+}
+.category-title {
+    width: 100%;
+}
+
