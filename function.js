@@ -1,29 +1,3 @@
-/*Для создания выбора эмоций в стандартном варианте, не нужно!)*/
-function createTable (count, parent,text) {
-    let line = 1;
-    let index_two = 1;
-
-    for (let index = 1; index <= count; index++) {
-        if(index_two % 3 == 0 && index_two !== 0) {
-            let button = document.createElement('button');
-            button.classList.add('change-button');
-            button.setAttribute('number', index_two);
-            button.setAttribute('line', line);
-            button.innerHTML = `${text} ${line}_${index}`;
-            parent.appendChild(button);
-            index_two = 0;
-            line++
-        } else {
-            let button = document.createElement('button');
-            button.classList.add('change-button');
-            button.setAttribute('number', index_two);
-            button.setAttribute('line', line);
-            button.innerHTML = `${text} ${line}_${index}`;
-            parent.appendChild(button);   
-        }
-        index_two++
-    }
-}
 function changeFrame(config, line, number,indentX, indentY) {
     let sWidth = config.sWidth;
     let sHeight = config.sHeight;
